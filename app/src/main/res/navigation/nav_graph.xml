@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_graph"
+            app:startDestination="@id/navigation_classes">
+
+    <fragment
+            android:id="@+id/navigation_classes"
+            android:name="com.ivanmarincic.nastava.ui.classes.ClassesFragment"
+            android:label="@string/classes_fragment_title">
+        <action
+                android:id="@+id/action_navigation_classes_to_navigation_details"
+                app:destination="@id/navigation_details"
+                app:enterAnim="@anim/fragment_close_enter"
+                app:exitAnim="@anim/fragment_close_exit"
+                app:popEnterAnim="@anim/fragment_close_enter"
+                app:popExitAnim="@anim/fragment_close_exit">
+            <argument
+                    android:name=""
+                    android:defaultValue="1"
+                    app:argType="integer" />
+        </action>
+        <action
+                android:id="@+id/action_navigation_classes_to_navigation_settings"
+                app:destination="@id/navigation_settings"
+                app:enterAnim="@anim/fragment_close_enter"
+                app:exitAnim="@anim/fragment_close_exit"
+                app:popEnterAnim="@anim/fragment_close_enter"
+                app:popExitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+            android:id="@+id/navigation_details"
+            android:name="com.ivanmarincic.nastava.ui.details.DetailsFragment"
+            android:label="@string/details_fragment_title" />
+    <fragment
+            android:id="@+id/navigation_settings"
+            android:name="com.ivanmarincic.nastava.ui.settings.SettingsFragment"
+            android:label="@string/settings_fragment_title"/>
+</navigation>

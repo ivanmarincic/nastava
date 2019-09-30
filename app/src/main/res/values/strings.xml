@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Nastava</string>
+    <string name="classes_fragment_title">Nastavni program</string>
+    <string name="details_fragment_title">Detalji</string>
+    <string name="settings_fragment_title">Postavke</string>
+    <string name="classes_menu_faculty_list">Fakultet</string>
+    <string name="classes_menu_settings">Postavke</string>
+    <string name="faculty_list_dialog_title">Odeberi fakultet</string>
+    <string name="choose_theme_dialog_title">Odeberi temu</string>
+    <string name="classes_list_header">Semestar</string>
+    <string name="settings_theme">Odaberi temu</string>
+    <string name="settings_theme_system">System</string>
+    <string name="settings_theme_night">Tamna tema</string>
+    <string name="settings_theme_light">Svijetla tema</string>
+    <string name="details_predavanja">Predavanja</string>
+    <string name="details_vjezbe">Vježbe</string>
+    <string name="details_seminari">Seminari</string>
+    <string name="details_nastavnik">Nastavnik</string>
+    <string name="details_ects">ECTS</string>
+    <string name="save">Spremi</string>
+</resources>

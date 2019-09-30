@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+                name="viewModel"
+                type="com.ivanmarincic.nastava.dataaccess.model.Fakultet"/>
+
+        <variable
+                name="eventListener"
+                type="com.ivanmarincic.nastava.ui.classes.FacultyEventListener"/>
+    </data>
+
+    <androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 android:orientation="vertical"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 app:textCompat="@{viewModel.naziv}"
+                                                 android:padding="@dimen/spacing_normal"
+                                                 android:background="?selectableItemBackground"
+                                                 android:onClick="@{() -> eventListener.selectFakultet(viewModel)}"/>
+</layout>

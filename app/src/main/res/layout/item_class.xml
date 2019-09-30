@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+                name="viewModel"
+                type="com.ivanmarincic.nastava.dataaccess.model.NastavniPlan"/>
+
+        <variable
+                name="eventListener"
+                type="com.ivanmarincic.nastava.ui.classes.ClassEventListener"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                       android:orientation="vertical"
+                                                       android:layout_width="match_parent"
+                                                       android:clickable="true"
+                                                       android:focusable="true"
+                                                       android:onClick="@{() -> eventListener.selectNastavniPlan(viewModel)}"
+                                                       android:background="?selectableItemBackground"
+                                                       android:layout_height="wrap_content"
+                                                       android:padding="@dimen/spacing_normal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textAppearance="?textAppearanceListItem"
+                tools:text="Title asadasdasd"
+                app:textCompat="@{viewModel.ptiId.naziv}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lecturer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                tools:text="123123"
+                app:textCompat="@{viewModel.nositeljId.punoIme}"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

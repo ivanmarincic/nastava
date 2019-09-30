@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Base.AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorSecondary">?attr/colorPrimary</item>
+        <item name="colorOnSecondary">@color/color_text_on_primary</item>
+        <item name="colorSurface">@color/window_background</item>
+        <item name="colorOnSurface">@color/color_text_on_background</item>
+
+        <!-- Window decor -->
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">@bool/use_light_status</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">@bool/use_light_navigation</item>
+        <item name="android:navigationBarColor">@color/nav_bar_scrim</item>
+
+        <!-- Widget styles -->
+        <item name="toolbarStyle">@style/Widget.Nastava.Toolbar</item>
+        <item name="navigationViewStyle">@style/Widget.Nastava.NavigationView</item>
+
+        <!-- Text appearances -->
+        <item name="textAppearanceBody2">@style/TextAppearance.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Button</item>
+        <item name="textAppearanceListItem">@style/TextAppearance.ListPrimary</item>
+
+        <!-- Dialogs -->
+        <item name="materialAlertDialogTheme">@style/AlertDialog.Theme</item>
+        <item name="android:dividerHorizontal">@drawable/classes_list_header_background</item>
+    </style>
+
+    <style name="AppTheme" parent="Base.AppTheme"/>
+
+    <style name="AppTheme.Launcher">
+        <item name="android:statusBarColor">@color/window_background</item>
+        <item name="android:windowBackground">@drawable/loading_window</item>
+    </style>
+
+    <style name="AlertDialog.Theme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="buttonBarStyle">@style/AlertDialog.ButtonBar</item>
+        <item name="dialogCornerRadius">@dimen/dialog_rounded_corner</item>
+        <item name="dialogPreferredPadding">@dimen/dialog_padding</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/AlertDialog.TitleText</item>
+        <item name="materialAlertDialogTitlePanelStyle">@style/AlertDialog.TitlePanel</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/AlertDialog.BodyText</item>
+    </style>
+</resources>

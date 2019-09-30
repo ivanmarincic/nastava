@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/classes_menu_faculty_list"
+            android:title="@string/classes_menu_faculty_list"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_school_black"
+            app:iconTint="@color/color_text_on_background"/>
+
+    <item
+            android:id="@+id/classes_menu_settings"
+            android:title="@string/classes_menu_settings"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_settings_black"
+            app:iconTint="@color/color_text_on_background"/>
+</menu>

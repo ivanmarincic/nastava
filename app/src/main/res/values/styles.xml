@@ -1,0 +1,114 @@
+<resources>
+
+    <style name="DialogAppearance" parent="@style/Theme.MaterialComponents.DayNight.Dialog">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="TextAppearance.ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:textColor">@color/color_text_on_background</item>
+    </style>
+
+    <style name="ButtonAppearance.ToolbarIcon" parent="@style/Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="tint">@color/color_text_on_background</item>
+        <item name="android:layout_width">@dimen/a11y_min_touch_target</item>
+        <item name="android:layout_height">@dimen/a11y_min_touch_target</item>
+        <item name="android:padding">@dimen/spacing_large</item>
+        <item name="android:background">?attr/actionBarItemBackground</item>
+    </style>
+
+    <style name="ButtonAppearance.IconButton" parent="@style/Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:layout_width">@dimen/a11y_min_touch_target</item>
+        <item name="android:layout_height">@dimen/a11y_min_touch_target</item>
+        <item name="android:background">?attr/actionBarItemBackground</item>
+        <item name="android:padding">@dimen/spacing_normal</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="Widget.Nastava" parent="@android:style/Widget.Material"/>
+
+    <style name="Widget.Nastava.NavigationView" parent="@style/Widget.MaterialComponents.NavigationView">
+        <item name="itemBackground">@drawable/navigation_item_background</item>
+        <item name="itemHorizontalPadding">@dimen/nav_item_horizontal_padding</item>
+        <item name="itemTextColor">@color/navigation_item_text_color</item>
+        <item name="android:backgroundTint">@color/appbar_background</item>
+    </style>
+
+    <style name="Widget.Nastava.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:paddingEnd">8dp</item>
+        <item name="popupTheme">@style/ThemeOverlay.MaterialComponents.Light</item>
+        <item name="titleTextAppearance">@style/TextAppearance.ToolbarTitle</item>
+        <item name="android:backgroundTint">@color/appbar_background</item>
+    </style>
+
+    <style name="Widget.Nastava.AppBar">
+        <item name="android:background">@color/appbar_background</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <style name="Widget.Nastava.Settings" />
+
+    <style name="Widget.Nastava.Settings.Button">
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:minHeight">?listPreferredItemHeightSmall</item>
+        <item name="android:paddingBottom">@dimen/spacing_normal</item>
+        <item name="android:paddingRight">?listPreferredItemPaddingEnd</item>
+        <item name="android:paddingStart">?listPreferredItemPaddingStart</item>
+        <item name="android:paddingTop">@dimen/spacing_normal</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textAppearance">?textAppearanceBody2</item>
+    </style>
+
+    <style name="AlertDialog.TitleText" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="AlertDialog.TitlePanel" parent="MaterialAlertDialog.MaterialComponents.Title.Panel">
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">?attr/dialogPreferredPadding</item>
+    </style>
+
+    <style name="AlertDialog.BodyText" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="AlertDialog.ButtonBar" parent="@style/Widget.AppCompat.ButtonBar.AlertDialog">
+        <item name="android:paddingBottom">@dimen/spacing_small</item>
+        <item name="android:paddingTop">@dimen/spacing_small</item>
+    </style>
+
+    <style name="TextAppearance.DetailsTitle" parent="@style/TextAppearance.MaterialComponents.Headline5">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">@dimen/text_size_h1</item>
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="TextAppearance.Body2" parent="TextAppearance.MaterialComponents.Body2" />
+
+    <style name="TextAppearance.Overline" parent="@style/TextAppearance.Body2">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+    <style name="TextAppearance.ListPrimary" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+</resources>
